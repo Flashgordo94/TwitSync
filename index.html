@@ -16,21 +16,38 @@ a {
     text-decoration:none
 }
         .myDiv {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            left: 0px;
+            font-family: sans-serif;
+            background-color: #A084DC;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+
+        .myDiv1 {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 98px;
+            padding-top: 50px;
             font-family: sans-serif;
             background-color: #EBC7E6;
             text-align: center;
-            
         }
         
         .secondDiv {
             position: absolute;
-            bottom: 49px;
+            bottom: 25px;
             width: 100%;
             left: 0px;
             font-family: sans-serif;
             background-color: #BFACE2;
             text-align: center;
-            text-decoration:none
+            text-decoration:none;
+            font-size: 8px;
         }
 
         .thirdDiv {
@@ -42,7 +59,8 @@ a {
             background-color: #A084DC;
             text-align: center;
             color: white;
-            text-decoration:none
+            text-decoration:none;
+            font-size: 8px;
         }
 
         /* unvisited link */
@@ -63,14 +81,43 @@ a {
             }
 
         .button {
-            background-color: #A084DC;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
+        border-radius: 4px;
+        background-color: #A084DC;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
         }
 
         </style>
@@ -82,9 +129,11 @@ a {
 <div class="myDiv">
     
     <h1>This is the offical webpage for TwitSync</h1><br>
-    
-    <h2><a href="https://api.notion.com/v1/oauth/authorize?client_id=52fd8a49-9463-4384-a3d4-cb1108fb09ba&response_type=code&owner=user&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fnotion%2Fcallback"><button class="button">Add to Notion</button></a></h2>
 
+</div>
+
+<div class="myDiv1">
+    <a href="https://api.notion.com/v1/oauth/authorize?client_id=52fd8a49-9463-4384-a3d4-cb1108fb09ba&response_type=code&owner=user&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fnotion%2Fcallback"><button class="button"><span>Add to Notion</span></button></a>
 </div>
 
 <div class="secondDiv">
@@ -97,7 +146,7 @@ a {
 </div>
 
 <div class="thirdDiv">
-    <h3>Brought to you by Peter Gordon Industries</h3>
+    <h3>© TwitSync</h3>
 </div>
 
 </body>
