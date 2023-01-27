@@ -5,37 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TwitSync</title>
+    <style>
+body {
+    background-color: #EBC7E6;
+    color: #A084DC;
+    text-decoration:none
+}
+
+a {
+    text-decoration:none
+}
+        .myDiv {
+            font-family: sans-serif;
+            background-color: #EBC7E6;
+            text-align: center;
+            
+        }
+        
+        .secondDiv {
+            position: absolute;
+            bottom: 49px;
+            width: 100%;
+            left: 0px;
+            font-family: sans-serif;
+            background-color: #BFACE2;
+            text-align: center;
+            text-decoration:none
+        }
+
+        .thirdDiv {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            left: 0px;
+            font-family: sans-serif;
+            background-color: #A084DC;
+            text-align: center;
+            color: white;
+            text-decoration:none
+        }
+
+        /* unvisited link */
+            a:link {
+            color: #A084DC;
+            }
+            /* visited link */
+            a:visited {
+            color: #A084DC;
+            }
+            /* mouse over link */
+            a:hover {
+            color: hotpink;
+            }
+            /* selected link */
+            a:active {
+            color: blue;
+            }
+
+        .button {
+            background-color: #A084DC;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        </style>
+
 </head>
-<style>
-
-.myDiv {
-    font-family: sans-serif;
-    background-color: #645CBB;
-    text-align: center;
-}
-
-.secondDiv {
-    font-family: sans-serif;
-    background-color: #A084DC;
-    text-align: center;
-}
-</style>
 
 <body>
 
-<div class="MyDiv">
-    <p>
+<div class="myDiv">
+    
     <h1>This is the offical webpage for TwitSync</h1><br>
-    <h2><a href="https://flashgordo94.github.io/TwitSync_Website/privacypolicy">Privacy Policy</a></h2><br>
-    <h2><a href="https://flashgordo94.github.io/TwitSync_Website/termsofuse">Terms of Use</h2><br>
-    <h2><a href="https://api.notion.com/v1/oauth/authorize?client_id=52fd8a49-9463-4384-a3d4-cb1108fb09ba&response_type=code&owner=user&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fnotion%2Fcallback">Add to Notion</a></h2>
-
-</p>
+    
+    <h2><a href="https://api.notion.com/v1/oauth/authorize?client_id=52fd8a49-9463-4384-a3d4-cb1108fb09ba&response_type=code&owner=user&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fnotion%2Fcallback"><button class="button">Add to Notion</button></a></h2>
 
 </div>
 
 <div class="secondDiv">
+    <p>
+    <h2 style="display:inline-block"><a href="https://flashgordo94.github.io/TwitSync_Website/privacypolicy">Privacy Policy</a></h2>
+    <h2 style="display:inline-block">       </h2>
+    <h2 style="display:inline-block"><a href="https://flashgordo94.github.io/TwitSync_Website/termsofuse">Terms of Use</a></h2>
+    
+    </p>
+</div>
 
+<div class="thirdDiv">
+    <h3>Brought to you by Peter Gordon Industries</h3>
 </div>
 
 </body>
